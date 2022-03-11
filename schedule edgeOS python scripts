@@ -1,2 +1,8 @@
 crontab -e
+
+add line to bottom of file
+
 * * * * * /usr/bin/python /config/scripts/edgeosMonitorDNS.py
+
+Ctrl-x
+Enter
