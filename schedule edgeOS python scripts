@@ -1,5 +1,2 @@
-configure
-set system task-scheduler task modify_nat executable path /config/scripts/edgeosMonitorDNS.py
-set system task-scheduler task modify_nat crontab-spec "*/1 * * * *"
-commit
-save
+crontab -e
+* * * * * /usr/bin/python /config/scripts/edgeosMonitorDNS.py
